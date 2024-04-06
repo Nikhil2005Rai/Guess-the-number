@@ -17,11 +17,9 @@ let playGame = true
 function validateGuess(guess){
     if(isNaN(guess)){
         alert("Please enter a valid number")
-        userInput.value = ``
     }
     else if(guess < 1 || guess > 100){
         alert("Please enter a valid number between 1 to 100")
-        userInput.value = ``
     }
     else{
         prevGuess.push(guess)
